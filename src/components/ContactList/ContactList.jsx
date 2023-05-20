@@ -1,4 +1,4 @@
-import { deleteContactItem, fetchContacts } from 'redux/operations';
+import { deleteContactItem, fetchContacts } from 'redux/contacts/operations';
 import ContactItem from '../ContactItem/ContactItem';
 import { List, Button, ListItem } from './ContactList.styled';
 import { useDispatch, useSelector } from 'react-redux';
@@ -6,7 +6,7 @@ import {
   selectFilters,
   selectIContacts,
   selectIsLoading,
-} from 'redux/selectors';
+} from 'redux/contacts/selectors';
 import { useEffect } from 'react';
 import Loader from 'components/Loader/Loader';
 

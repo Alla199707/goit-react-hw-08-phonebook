@@ -36,3 +36,8 @@ export const Button = styled.button`
     box-shadow: 5px 1px 1px BlueViolet;
   }
 `;
+
+export const Container = styled.div`
+  display: flex;
+  justify-content: center;
+`;

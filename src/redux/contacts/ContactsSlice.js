@@ -5,6 +5,7 @@ const { createSlice, isAnyOf } = require('@reduxjs/toolkit');
 const arrActions = [fetchContacts, addContactItem, deleteContactItem];
 
 const getActions = type => arrActions.map(action => action[type]);
+
 const handlePending = state => {
   state.isLoading = true;
 };
