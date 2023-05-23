@@ -13,6 +13,7 @@ export default function Contacts() {
   const dispatch = useDispatch();
   const isLoading = useSelector(selectIsLoading);
   const error = useSelector(selectError);
+  // const contactsList2 = useSelector(selectIContacts);
 
   useEffect(() => {
     dispatch(fetchContacts());
@@ -24,6 +25,12 @@ export default function Contacts() {
       <ContactForm />
       <Title>Contacts</Title>
       <Filter />
+
+      {/* {contactsList2.length === 0 ? (
+        console.log('There are no contacts.')
+      ) : (
+        <ContactList />
+      )} */}
       <ContactList />
       {isLoading && !error && <Loader />}
     </Container>

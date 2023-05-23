@@ -24,13 +24,13 @@ const ContactList = () => {
       })
     );
   };
-
+  
   const filterContacts = getFilterContacts();
 
   useEffect(() => {
     dispatch(fetchContacts());
   }, [dispatch]);
-  // console.log(filterContacts);
+
   return (
     <>
       {isLoading && <Loader />}

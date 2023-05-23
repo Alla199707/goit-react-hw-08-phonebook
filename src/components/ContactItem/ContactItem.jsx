@@ -1,8 +1,8 @@
-const ContactItem = ({ contacts: { name, phone } }) => {
+const ContactItem = ({ contacts: { name, number } }) => {
   return (
     <>
       <span> {name} : </span>
-      <span>{phone} </span>
+      <span>{number} </span>
     </>
   );
 };

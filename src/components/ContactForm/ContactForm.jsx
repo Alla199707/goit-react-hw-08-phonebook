@@ -28,11 +28,13 @@ function ContactForm() {
 
   const handleSubmit = e => {
     e.preventDefault();
+
     const addNewContact = {
       id: nanoid(),
       name,
       number,
     };
+
     handleCheck(addNewContact);
     setName('');
     setNumber('');
@@ -78,7 +80,4 @@ function ContactForm() {
     </Container>
   );
 }
-// ContactForm.propTypes = {
-//   onSubmit: PropTypes.func.isRequired,
-// };
 export default ContactForm;
