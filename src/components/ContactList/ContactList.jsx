@@ -26,7 +26,11 @@ const ContactList = () => {
   };
 
   const filterContacts = getFilterContacts();
+  // const normalizedFilter = filter.toLowerCase();
 
+  // const filterContacts = contacts.filter(contact =>
+  //   contact.name.toLowerCase().includes(normalizedFilter)
+  // );
   useEffect(() => {
     dispatch(fetchContacts());
   }, [dispatch]);

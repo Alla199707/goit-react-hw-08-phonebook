@@ -13,7 +13,7 @@ export default function Contacts() {
   const dispatch = useDispatch();
   const isLoading = useSelector(selectIsLoading);
   const error = useSelector(selectError);
-  // const contactsList2 = useSelector(selectIContacts);
+  // const contactsList = useSelector(selectIContacts);
 
   useEffect(() => {
     dispatch(fetchContacts());
