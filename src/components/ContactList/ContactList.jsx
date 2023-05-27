@@ -24,7 +24,7 @@ const ContactList = () => {
       })
     );
   };
-  
+
   const filterContacts = getFilterContacts();
 
   useEffect(() => {

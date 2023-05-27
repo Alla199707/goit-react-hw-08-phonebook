@@ -1,6 +1,7 @@
 import { addContactItem, deleteContactItem, fetchContacts } from './operations';
 
 const { createSlice, isAnyOf } = require('@reduxjs/toolkit');
+// const { createSlice } = require('@reduxjs/toolkit');
 
 const arrActions = [fetchContacts, addContactItem, deleteContactItem];
 
@@ -39,6 +40,7 @@ export const ContactSlice = createSlice({
     isLoading: false,
     error: '',
   },
+
   extraReducers: builder => {
     builder
       .addCase(fetchContacts.fulfilled, handleFulfildAll)
